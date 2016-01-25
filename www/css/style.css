@@ -1,0 +1,29 @@
+/* Empty. Add your own CSS if you like */
+#meds-refund-form .toggle-wrapper {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: -20px;
+
+}
+
+  .toggle-question {
+    font-size: $default-font-size -3;
+    float: left;
+    margin: 10px;
+  }
+
+    .toggle-text {
+    width: 10%;
+    color: $bright-yellow;
+
+  }
+    .meds-toggle {
+    margin: 10px;
+    width: 5%;
+    float: right;
+    border: none;
+    height: 50px;
+  }
+  .buttonHolder{
+    text-align: center;
+}

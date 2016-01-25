@@ -1,0 +1,86 @@
+	<ion-view view-title="Product List" id="background">
+	  <ion-content class="padding" style="margin-top:50px;" >
+	      
+			<div class="list">
+
+			  <label class="item item-input item-select">
+			    <div class="input-label">
+			      Product Type
+			    </div>
+			    <select  ng-model="mySelect" ng-change="showSelectValue(mySelect)">
+					<option ng-repeat="item in items" value="{{item.value}}">{{item.name}}</option>			    
+			    </select>
+			  </label>
+			   <label class="item item-input item-select">
+			    <div class="input-label">
+			      Product Sub-Type
+			    </div>
+			    <select >
+					<option ng-repeat="Loans in Loan" value="{{Loans.value}}">{{Loans.name}}</option>			    
+			    </select>
+			  </label>
+			   <label class="item item-input">
+				  <div class="toggle-wrapper" style="width: 100%;">
+			        <span class="toggle-question">Language</span>
+			        <ion-toggle class="meds-toggle" style="width: 33%;"
+			                    toggle-class="toggle-positive"
+			                    ng-model="customText"
+			                    ng-checked="customText">
+			          <div class="toggle-text">{{customText ? "English" : "Arabic"}}</div>
+			        </ion-toggle>
+
+	  				</div>
+  			 </label>
+  			 <DIV>
+				  <label class="item item-input">
+				    <input type="text" placeholder="First Name">
+				  </label>
+				 </DIV>
+				  <label class="item item-input">
+				    <input type="text" placeholder="Last Name">
+				  </label>
+				  <label class="item item-input" >
+				    <input type="email" placeholder="Email">
+				  </label>
+				   <label class="item item-input item-select">
+					 <div class="input-label">
+			     		 Mobile Area
+			   		 </div>
+					  <select>
+						<option >050</option>
+						<option >052</option>	
+						<option >055</option>	
+						<option >056</option>					 		    				
+				    </select>
+				</label>
+			    <label class="item item-input">
+				    <input type="tel" placeholder="Mobile ">
+				  </label>	
+			    
+				   <label class="item item-input">
+				    <input type="text" placeholder="Company">
+				  </label>
+				   <label class="item item-input">
+				    <input type="text" placeholder="Monthly Salary(AED)">
+				  </label>
+				   <label class="item item-input">
+				     <textarea msd-elastic ng-model="foo"  placeholder="Comments"> </textarea>
+				  </label>
+				  <div class="buttonHolder" style="margin-top:15px;">
+    					 	<button class="button  button-positive">
+							  Submit
+							</button>
+ 
+    				 		<button class="button  button-positive">
+							  Reset
+							</button>
+				</div>
+				 
+				
+			
+
+
+			</div>
+			</div>
+	  </ion-content>
+	</ion-view>

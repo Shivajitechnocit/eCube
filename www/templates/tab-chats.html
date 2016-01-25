@@ -1,0 +1,17 @@
+<ion-view view-title="Product List">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" >
+      
+		 <button nav-clear class="button button-block button-positive" ng-click="productPage()">
+              Apply for a product
+            </button>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
